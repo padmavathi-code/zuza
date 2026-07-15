@@ -1,0 +1,125 @@
+1. Welcome API (GET)
+
+Method:
+
+GET
+
+URL:
+
+http://127.0.0.1:8000/
+
+Click Send
+
+Response:
+
+{
+    "message": "Welcome to Day 3 FastAPI"
+}
+2. Student POST API
+
+Method:
+
+POST
+
+URL:
+
+http://127.0.0.1:8000/students
+
+Go to:
+
+Body
+ → raw
+ → JSON
+
+Enter:
+
+{
+    "name": "Padma",
+    "age": 22,
+    "course": "Python"
+}
+
+Click Send
+
+Response:
+
+{
+    "message": "Student added",
+    "data": {
+        "id": 1,
+        "name": "Padma",
+        "age": 22,
+        "course": "Python"
+    }
+}
+3. Student GET API
+
+Method:
+
+GET
+
+URL:
+
+http://127.0.0.1:8000/students
+
+Response:
+
+[
+    {
+        "id":1,
+        "name":"Padma",
+        "age":22,
+        "course":"Python"
+    }
+]
+4. Calculator API
+
+Method:
+
+GET
+
+URL:
+
+http://127.0.0.1:8000/calculator?num1=10&num2=5&operation=add
+
+Response:
+
+{
+    "result":15
+}
+
+Try:
+
+http://127.0.0.1:8000/calculator?num1=10&num2=5&operation=mul
+
+Result:
+
+{
+    "result":50
+}
+5. Product POST API
+
+Method:
+
+POST
+
+URL:
+
+http://127.0.0.1:8000/products
+
+Body → raw → JSON:
+
+{
+    "name":"Laptop",
+    "price":50000
+}
+
+Response:
+
+{
+    "message":"Product created",
+    "product":{
+        "name":"Laptop",
+        "price":50000
+    }
+}
