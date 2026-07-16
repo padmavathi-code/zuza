@@ -123,3 +123,17 @@ Response:
         "price":50000
     }
 }
+
+
+
+
+
+day4api 
+
+
+Test using Postman
+Method	URL
+GET	http://127.0.0.1:8000/
+POST	http://127.0.0.1:8000/students
+GET	http://127.0.0.1:8000/students
+DELETE	http://127.0.0.1:8000/students/1
