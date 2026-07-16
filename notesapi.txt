@@ -137,3 +137,42 @@ GET	http://127.0.0.1:8000/
 POST	http://127.0.0.1:8000/students
 GET	http://127.0.0.1:8000/students
 DELETE	http://127.0.0.1:8000/students/1
+
+
+
+
+
+day 5  output
+
+
+INFO:     127.0.0.1:63153 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63156 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63161 - "GET /students HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63161 - "GET /students/ HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63163 - "GET /students/2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63167 - "POST /students HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63167 - "POST /students/ HTTP/1.1" 201 Created
+INFO:     127.0.0.1:63169 - "PUT /students/5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63171 - "DELETE /students/5 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:63173 - "GET /students HTTP/1.1" 307 Temporary Redirect
+INFO:     127.0.0.1:63173 - "GET /students/ HTTP/1.1" 200 OK
+
+
+
+
+
+API
+Swagger UI
+http://127.0.0.1:8000/docs
+Home API
+GET http://127.0.0.1:8000/
+Create Student
+POST http://127.0.0.1:8000/students/
+Get All Students
+GET http://127.0.0.1:8000/students/
+Get Student By ID
+GET http://127.0.0.1:8000/students/1
+Update Student
+PUT http://127.0.0.1:8000/students/1
+Delete Student
+DELETE http://127.0.0.1:8000/students/1
