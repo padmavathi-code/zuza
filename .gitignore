@@ -1,0 +1,5 @@
+FastApi/
+StudentManagement/
+venv/
+__pycache__/
+*.pyc
